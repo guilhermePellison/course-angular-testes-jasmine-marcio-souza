@@ -5,32 +5,29 @@
  * @since 0.0.3
  */
 
-import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { RouterModule } from "@angular/router";
 
-import { 
-	ClienteCadastrarComponent,
-	ClienteEditarComponent,
-	ClienteListarComponent,
-	ClienteVisualizarComponent,
-	ClienteService
-} from './';
+import {
+    ClienteCadastrarComponent,
+    ClienteEditarComponent,
+    ClienteListarComponent,
+    ClienteVisualizarComponent,
+    ClienteService,
+    ClienteIdPipe,
+} from "./";
 
-import { SharedModule } from '../shared';
+import { SharedModule } from "../shared";
 
 @NgModule({
-	imports: [ 
-		RouterModule,
-		SharedModule
-	],
-	declarations: [
-		ClienteCadastrarComponent,
-		ClienteEditarComponent,
-		ClienteListarComponent,
-		ClienteVisualizarComponent
-	],
-	providers: [
-		ClienteService
-	]
+    imports: [RouterModule, SharedModule],
+    declarations: [
+        ClienteCadastrarComponent,
+        ClienteEditarComponent,
+        ClienteListarComponent,
+        ClienteVisualizarComponent,
+        ClienteIdPipe,
+    ],
+    providers: [ClienteService],
 })
 export class ClienteModule {}

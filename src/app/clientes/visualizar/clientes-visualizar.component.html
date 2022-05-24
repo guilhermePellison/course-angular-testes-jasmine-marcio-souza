@@ -1,0 +1,19 @@
+<h1>Visualizar Clientes</h1>
+
+<div>
+    <table class="table table-striped">
+        <tr>
+            <th>ID</th>
+            <td>{{ clientes.id }}</td>
+        </tr>
+        <tr>
+            <th>Nome</th>
+			<td>{{ clientes.nome }}</td>
+		</tr>
+    </table>
+	<div class="text-center">
+		<a class="btn btn-default" [routerLink]="['/clientess']">
+			Voltar
+		</a>
+	</div>
+</div>

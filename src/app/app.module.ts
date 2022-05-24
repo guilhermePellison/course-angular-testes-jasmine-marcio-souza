@@ -13,9 +13,16 @@ import { AppRoutingModule } from "./app-routing.module";
 
 import { DemoModule } from "./";
 import { ClienteModule } from "./cliente";
+import { ClientesModule } from "./clientes";
 
 @NgModule({
-  imports: [BrowserModule, AppRoutingModule, DemoModule, ClienteModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    DemoModule,
+    ClienteModule,
+    ClientesModule,
+  ],
   declarations: [AppComponent],
   bootstrap: [AppComponent],
 })

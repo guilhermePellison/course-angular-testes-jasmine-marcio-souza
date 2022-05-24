@@ -10,8 +10,9 @@ import { Routes, RouterModule } from "@angular/router";
 
 import { DemoRoutes } from "./demo";
 import { ClienteRoutes } from "./cliente";
+import { ClientesRoutes } from "./clientes";
 
-export const routes: Routes = [...DemoRoutes, ...ClienteRoutes];
+export const routes: Routes = [...DemoRoutes, ...ClienteRoutes, ...ClientesRoutes];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
